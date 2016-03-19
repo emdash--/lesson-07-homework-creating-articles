@@ -4,15 +4,15 @@
 <br />
 <br />
  <%= form_for @article, url: {action: :create}, html: {class: "new_article"} do |article| %>
-    <%= article.label :article_title %>
-    <br />
-      <%= article.text_field :article_title, placeholder: 'Article Title' %>
-      <br />
-      <br />
-      <%= article.label :article_body %>
-      <br />
-      <%= article.text_area :article_body, placeholder: 'Article Body', size: "30x10" %>
-      <br />
-      <br />
-     <%= article.submit "Create" %>
+   <%= article.label :article_title %>
+   <br />
+   <%= article.text_field :article_title, placeholder: 'Article Title' %>
+   <br />
+   <br />
+   <%= article.label :article_body %>
+   <br />
+   <%= article.text_area :article_body, placeholder: 'Article Body', size: "30x10" %>
+   <br />
+   <br />
+   <%= article.submit "Create" %>
  <% end %>

@@ -4,6 +4,7 @@
 Article title: <br />
 <%= @article.article_title %>
 </p>
+
 <p>
 Article body:<br />
 <%= @article.article_body %>
@@ -12,6 +13,6 @@ Article body:<br />
 <h2 style="font-family: sans-serif">previous articles</h1>
 
 <% @articles.each do |article| %>
-    <h3 style="font-family: sans-serif"><%= article.article_title %></h3> 
-    <p style="font-family: sans-serif"><%= article.article_body %> </p>
+  <h3 style="font-family: sans-serif"><%= article.article_title %></h3> 
+  <p style="font-family: sans-serif"><%= article.article_body %> </p>
 <% end %>  
